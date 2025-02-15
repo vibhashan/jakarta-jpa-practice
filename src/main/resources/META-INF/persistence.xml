@@ -15,15 +15,15 @@
 				value="oracle.jdbc.OracleDriver" />
 
 			<property name="jakarta.persistence.jdbc.url"
-				value="jdbc:oracle:thin:@(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ca-toronto-1.oraclecloud.com))(connect_data=(service_name=g74324802c9de2d_atpdb1_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))" />
+				value="yourDbUrl" />
 
-			<property name="jakarta.persistence.jdbc.user" value="test" />
+			<property name="jakarta.persistence.jdbc.user" value="yourUsername" />
 
 			<property name="jakarta.persistence.jdbc.password"
-				value="CodingNoob123@2002" />
+				value="yourPassword" />
 
 			<property name="hibernate.show_sql" value="true" />
-
+			
 			<property name="hibernate.format_sql" value="true" />
 		</properties>
 
