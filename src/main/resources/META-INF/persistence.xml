@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0"
+	xmlns="https://jakarta.ee/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+ https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+	<persistence-unit name="jakarta-jpa-practice"
+		transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		<properties>
+			<property name="jakarta.persistence.jdbc.driver"
+				value="oracle.jdbc.OracleDriver" />
+
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.ca-toronto-1.oraclecloud.com))(connect_data=(service_name=g74324802c9de2d_atpdb1_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))" />
+
+			<property name="jakarta.persistence.jdbc.user" value="test" />
+
+			<property name="jakarta.persistence.jdbc.password"
+				value="CodingNoob123@2002" />
+
+			<property name="hibernate.show_sql" value="true" />
+
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+
+</persistence>
